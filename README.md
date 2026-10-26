@@ -1,19 +1,27 @@
-# Last Tangle — Unofficial Website Redesign Concept
+# Last Tangle — Unofficial Redesign Concept
 
-**Independent design concept only. Not affiliated with, approved by, or endorsed by Last Tangle Salon.**
+**Independent demonstration only. Not affiliated with, endorsed by, or approved by Last Tangle Salon.**
 
-This repository contains an initial public-facing salon website demonstration (`index.html`) and a website-management dashboard (`dashboard.html`).
+## Pages
 
-Once GitHub Pages is enabled, open:
-- Website: https://codewhizkid.github.io/last-tangle-redesign/
-- Dashboard: https://codewhizkid.github.io/last-tangle-redesign/dashboard.html
+- [Public website preview](https://codewhizkid.github.io/last-tangle-redesign/)
+- [Website management dashboard](https://codewhizkid.github.io/last-tangle-redesign/dashboard.html)
 
-### Important demo limitations
-The dashboard saves edits to the current browser's localStorage. Changes can appear on the website preview in the same browser/device. They do **not** publish to GitHub, synchronize between devices, or modify the actual Last Tangle website. There is no login, database, or WordPress connection yet.
+Enable GitHub Pages in Settings → Pages → Deploy from a branch → main → /(root).
 
-### Next development stages
-- Bring over the full photo-rich luxury redesign and approved assets.
-- Implement secure WordPress-based content management, role permissions, photo uploads, and preview/publish.
-- Link to Meevo booking using the salon's authorized booking URL.
+## Dashboard features
 
-Do not enter credentials or sensitive information in this demonstration.
+- Edit homepage, Our Story, services, careers, contact, and approved booking URL.
+- Replace hero, salon story, and service photos.
+- Add team profiles and upload portraits.
+- Upload gallery photos and captions.
+- Save drafts, preview drafts, and publish changes **locally in the same browser**.
+- Export/import content JSON (image binaries are not included).
+
+### Limitations
+
+This is a static GitHub Pages demonstration, **not** a production content management system. It uses localStorage for content and IndexedDB for photos. Images and edits do not sync across devices or users, do not modify files in GitHub, and do not affect Last Tangle's live website. Clearing browser storage can permanently remove edits and photos. Exported JSON does not include photo files. There is no login or server-side authorization. Do not store sensitive data here.
+
+## Production roadmap
+
+For real shared publishing: implement authenticated WordPress content types, permissions, media library integration, revisions, staging and production publishing, backups, and authorized Meevo booking links. Port the complete approved photographic redesign into the theme.
